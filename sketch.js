@@ -77,7 +77,7 @@ function draw() {
   plinkos[p].display();
   }
 
-  if(particle!=null){
+  if(particle!==null){
     particle.display();
     
   }
@@ -100,7 +100,7 @@ function draw() {
 function mousePressed(){
   if(gameState==="play"){
     turn++;
-    particle = new Particle(mouseX,mouseY,10,10);
+    particle = new Particle(mouseX,10,10);
 
   }
 }
